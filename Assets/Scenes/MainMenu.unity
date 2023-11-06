@@ -4199,15 +4199,16 @@ RectTransform:
   m_GameObject: {fileID: 571711304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3374918, y: 3.2700467, z: 3.3374918}
+  m_LocalScale: {x: 1.2980535, y: 1.2980534, z: 1.2980535}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 31824271}
-  m_Father: {fileID: 1486968874}
+  - {fileID: 1486968874}
+  m_Father: {fileID: 1834250143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 656, y: -445}
+  m_AnchoredPosition: {x: 75.722595, y: -88.31262}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571711306
@@ -7219,7 +7220,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2086591315}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: salir
+        m_MethodName: instrucciones
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10269,16 +10270,15 @@ RectTransform:
   m_GameObject: {fileID: 1486968873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3889309, y: 0.3969526, z: 0.3889309}
+  m_LocalScale: {x: 0.29962623, y: 0.30580607, z: 0.29962623}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 571711305}
-  m_Father: {fileID: 1834250143}
+  m_Children: []
+  m_Father: {fileID: 571711305}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.98875, y: 1}
-  m_AnchoredPosition: {x: -98, y: 113}
-  m_SizeDelta: {x: 651.6875, y: 209.93195}
+  m_AnchoredPosition: {x: -75.91685, y: 70.34581}
+  m_SizeDelta: {x: 661.575, y: 369.93195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486968875
 MonoBehaviour:
@@ -11931,7 +11931,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1486968874}
+  - {fileID: 571711305}
   - {fileID: 559710820}
   - {fileID: 976018428}
   - {fileID: 1488665418}
@@ -13302,6 +13302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e62ade52336b34fb01289dcbeb062e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 1810314202}
 --- !u!1 &2095984329
 GameObject:
   m_ObjectHideFlags: 0

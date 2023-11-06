@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
+    public GameObject panel;
     public void jugar()
     {
         // Aquí puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
-        SceneManager.LoadScene("minijuego");
+        //SceneManager.LoadScene("minijuego");
+        panel.SetActive(true);
     }
 
     public void ajustes()
