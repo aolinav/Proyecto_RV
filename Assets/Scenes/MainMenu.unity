@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.2331076, g: 0.23627803, b: 0.27289605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -520,8 +520,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: jugar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
-  m_sharedMaterial: {fileID: -4526596143552628962, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7db20aa7ce0b56c42b7b35f913057a67, type: 2}
+  m_sharedMaterial: {fileID: -2439473697650887255, guid: 7db20aa7ce0b56c42b7b35f913057a67, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -941,15 +941,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.0017443587, g: 0.25457865, b: 0.46226418, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95e4b891553a08a48baabe184553e7fd, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 6858abb4516aae344881bf286b3aac33, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2657,7 +2657,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.04
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3147,7 +3147,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: SetMute
         m_Mode: 1
@@ -3894,7 +3894,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 2
@@ -4085,21 +4085,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
-        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
-        m_MethodName: OpenPanel
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1810314202}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812551156}
-        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
-        m_MethodName: OnButtonCursorExit
+      - m_Target: {fileID: 2086591315}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: ajustes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4209,18 +4197,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571711304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8416303, y: 1.8416303, z: 1.8416303}
+  m_LocalScale: {x: 2.9700913, y: 2.910071, z: 2.9700913}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 31824271}
-  - {fileID: 1486968874}
-  m_Father: {fileID: 1834250143}
+  m_Father: {fileID: 1486968874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81, y: -95}
+  m_AnchoredPosition: {x: 640.48, y: -416.78}
   m_SizeDelta: {x: 140, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571711306
@@ -4267,21 +4254,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
-        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
-        m_MethodName: OpenPanel
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1771832698}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812551156}
-        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
-        m_MethodName: OnButtonCursorExit
+      - m_Target: {fileID: 2086591315}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: jugar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4304,15 +4279,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.009344926, g: 0.39267147, b: 0.7075472, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a204fc8891eb89446a559107760b189d, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 9a32a6cc2cb803443983d45d4a513506, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 2
@@ -5616,7 +5591,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 2
@@ -6572,7 +6547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 2
@@ -7242,21 +7217,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
-        m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812551156}
-        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
-        m_MethodName: OnButtonCursorExit
+      - m_Target: {fileID: 2086591315}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: salir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9789,8 +9752,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cargando...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 36945e87879de154cb9d2b22c2af2e0f, type: 2}
-  m_sharedMaterial: {fileID: -3624274875895810977, guid: 36945e87879de154cb9d2b22c2af2e0f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10306,15 +10269,16 @@ RectTransform:
   m_GameObject: {fileID: 1486968873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21118836, y: 0.21554413, z: 0.21118836}
+  m_LocalScale: {x: 0.3889309, y: 0.3969526, z: 0.3889309}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 571711305}
+  m_Children:
+  - {fileID: 571711305}
+  m_Father: {fileID: 1834250143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.98875, y: 1}
-  m_AnchoredPosition: {x: -50, y: 43.5}
-  m_SizeDelta: {x: 661.575, y: 369.93195}
+  m_AnchoredPosition: {x: -86.68805, y: 95.110916}
+  m_SizeDelta: {x: 651.6875, y: 209.93195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486968875
 MonoBehaviour:
@@ -11333,7 +11297,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2086591313}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainPanel, Assembly-CSharp
         m_MethodName: SetMute
         m_Mode: 1
@@ -11879,7 +11843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1816350877
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11967,7 +11931,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 571711305}
+  - {fileID: 1486968874}
   - {fileID: 559710820}
   - {fileID: 976018428}
   - {fileID: 1488665418}
@@ -13133,7 +13097,6 @@ GameObject:
   - component: {fileID: 2086591311}
   - component: {fileID: 2086591310}
   - component: {fileID: 2086591309}
-  - component: {fileID: 2086591313}
   - component: {fileID: 2086591314}
   - component: {fileID: 2086591315}
   m_Layer: 5
@@ -13231,29 +13194,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2086591313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086591308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bc5afcaab1813a42a832dbde13a0b66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumenFX: {fileID: 64735699}
-  volumenMaster: {fileID: 447421306}
-  mute: {fileID: 1688257357}
-  volumenFXGL: {fileID: 934196160}
-  volumenMasterGL: {fileID: 1220183381}
-  muteGL: {fileID: 474475372}
-  mixer: {fileID: 0}
-  lastVolume: 0
-  mainPanel: {fileID: 1834250142}
-  settingsPanel: {fileID: 1810314202}
-  levelSelectPanel: {fileID: 1771832698}
 --- !u!82 &2086591314
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13359,12 +13299,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2086591308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 900613ea152463c4489c8d7e023e3d66, type: 3}
+  m_Script: {fileID: 11500000, guid: 86e62ade52336b34fb01289dcbeb062e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelWIN: {fileID: 2007415459}
-  panelWEBGL: {fileID: 2095984329}
-  button: {fileID: 976018429}
 --- !u!1 &2095984329
 GameObject:
   m_ObjectHideFlags: 0
