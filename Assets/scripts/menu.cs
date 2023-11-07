@@ -6,28 +6,31 @@ using UnityEngine.SceneManagement;
 public class menu : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject principal;
+
     public void jugar()
     {
-        // Aquí puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
+        // Aquï¿½ puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
         //SceneManager.LoadScene("minijuego");
         panel.SetActive(true);
+        principal.SetActive(false);
     }
 
     public void ajustes()
     {
-        // Aquí puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
+        // Aquï¿½ puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
         SceneManager.LoadScene("ajustes");
     }
 
     public void video()
     {
-        // Aquí puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
+        // Aquï¿½ puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
         SceneManager.LoadScene("video");
     }
 
     public void instrucciones()
     {
-        // Aquí puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
+        // Aquï¿½ puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
         SceneManager.LoadScene("instrucciones");
     }
 
@@ -39,5 +42,12 @@ public class menu : MonoBehaviour
     public void salir()
     {
         Application.Quit();
+    }
+
+    public void volver()
+    {
+        // Para volver del panel secundario al principal
+        panel.SetActive(false);
+        principal.SetActive(true);
     }
 }
