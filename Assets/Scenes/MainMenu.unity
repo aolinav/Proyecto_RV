@@ -7338,7 +7338,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2086591315}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: jugar
+        m_MethodName: video
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
