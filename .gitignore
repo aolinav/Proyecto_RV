@@ -2,6 +2,8 @@ Library/
 Logs/
 UserSettings/
 Proyecto_RV.rar
-Packages/com.ptc.vuforia.engine-10.17.4/
-
+Packages/com.ptc.vuforia.engine-10.17.4.tgz
+Assets/Editor/migration/com.ptc.vuforia.engine-10.17.4.tgz
 Proyecto_RV.sln
+
+obj/Debug/

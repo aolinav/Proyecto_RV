@@ -19,7 +19,7 @@ public class menu : MonoBehaviour
     public void ajustes()
     {
         // Aqu� puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
-        SceneManager.LoadScene("ajustes");
+        SceneManager.LoadScene("Options");
     }
 
     public void video()
