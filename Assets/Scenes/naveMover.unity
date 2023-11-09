@@ -1205,13 +1205,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: imageTargetSprint2
+  mTrackableName: imageJoan
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/BD.xml
-  mAspectRatio: 1.4479638
+  mAspectRatio: 0.84689
   mImageTargetType: 0
   mWidth: 8
-  mHeight: 11.583711
+  mHeight: 6.77512
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1742982004}
   mHiddenRoot: {fileID: 0}
-  mTargetName: imageTargetSprint2
+  mTargetName: imageJoan
   mDatasetName: Vuforia/BD.xml
   mCastedBehaviour: {fileID: 1742982004}
   mMeshFilter: {fileID: 0}

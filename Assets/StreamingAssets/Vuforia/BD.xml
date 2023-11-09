@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="imageJoan" size="8.000000 6.775120" />
     <ImageTarget name="imageTargetSprint2" size="8.000000 11.583711" />
     <ImageTarget name="menace" size="10.000000 5.226130" />
     <ImageTarget name="pixar" size="800.000000 933.029602" />
