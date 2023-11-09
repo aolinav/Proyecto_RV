@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 40515113}
   - component: {fileID: 40515117}
   - component: {fileID: 40515116}
-  - component: {fileID: 40515120}
+  - component: {fileID: 40515118}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -203,18 +203,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Joker
+  mTrackableName: imageTargetSprint2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/BD.xml
-  mAspectRatio: 1.426758
+  mAspectRatio: 1.4479638
   mImageTargetType: 0
-  mWidth: 1
-  mHeight: 1.426758
+  mWidth: 8
+  mHeight: 11.583711
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 40515120}
+  mPreview: {fileID: 40515118}
 --- !u!4 &40515115
 Transform:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40515111}
   m_Mesh: {fileID: 1393929798}
---- !u!114 &40515120
+--- !u!114 &40515118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 40515114}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Joker
+  mTargetName: imageTargetSprint2
   mDatasetName: Vuforia/BD.xml
   mCastedBehaviour: {fileID: 40515114}
   mMeshFilter: {fileID: 0}
@@ -590,6 +590,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450736995}
     m_Modifications:
+    - target: {fileID: 1154143629144321281, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154143629144321281, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.7400017
+      objectReference: {fileID: 0}
     - target: {fileID: 1154143629144321286, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -636,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -644,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchorMin.y
@@ -652,7 +660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 158.4
+      value: 158.40002
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_SizeDelta.y
@@ -688,11 +696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 212
+      value: -188
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 151
+      value: 134
       objectReference: {fileID: 0}
     - target: {fileID: 1154143630318143795, guid: 7541a5123b00e4141ac1ac51bcf720cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

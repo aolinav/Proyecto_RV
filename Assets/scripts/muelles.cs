@@ -40,7 +40,7 @@ public class muelles : MonoBehaviour
         }
 
         Vector2 move = new Vector2(_joystick.Horizontal, _joystick.Vertical);
-        avance = move.y * coefAvance;
+        avance = Mathf.Max(0, move.y) * coefAvance;
         giro = move.x * coefGiro;
 /*
         if (avance != avance_anterior)
