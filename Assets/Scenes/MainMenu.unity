@@ -3903,7 +3903,7 @@ RectTransform:
   m_GameObject: {fileID: 496379889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8938782, y: 0.8938782, z: 0.8938782}
+  m_LocalScale: {x: 0.97289705, y: 0.97289705, z: 0.97289705}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 399048482}
@@ -6823,7 +6823,7 @@ RectTransform:
   m_GameObject: {fileID: 816324100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8306721, y: 0.8306721, z: 0.8306721}
+  m_LocalScale: {x: 1.0802891, y: 1.0802891, z: 1.0802891}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52047577}
@@ -6853,7 +6853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "mover \npersonaje"
+  m_text: mover
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
   m_sharedMaterial: {fileID: -4526596143552628962, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
@@ -14213,7 +14213,7 @@ RectTransform:
   m_GameObject: {fileID: 2114720721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8938782, y: 0.8938782, z: 0.8938782}
+  m_LocalScale: {x: 0.9961328, y: 0.9961328, z: 0.9961328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1433135086}
@@ -14243,9 +14243,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: 'expositor
 
 '
+=======
+  m_text: escalar
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
   m_sharedMaterial: {fileID: -4526596143552628962, guid: 02f0ed552ce0baf4ba13f1c53e986634, type: 2}
