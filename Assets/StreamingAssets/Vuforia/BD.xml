@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="imageTargetSprint2" size="8.000000 11.583711" />
+    <ImageTarget name="menace" size="10.000000 5.226130" />
+    <ImageTarget name="pixar" size="800.000000 933.029602" />
+    <ImageTarget name="Astronaut-scaled" size="800.000000 1381.818237" />
+    <ImageTarget name="images" size="600.000000 600.000000" />
+    <ImageTarget name="as" size="200.000000 200.000000" />
+    <ImageTarget name="Joker" size="1.000000 1.426758" />
+  </Tracking>
+</QCARConfig>
