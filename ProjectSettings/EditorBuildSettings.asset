@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Pausa.unity
     guid: d47acf852e574884fb0f3a400bfa9848
   - enabled: 1
+    path: Assets/Scenes/naveMover.unity
+    guid: cd5b70db916769949917b5c60f9510ac
+  - enabled: 1
+    path: Assets/Scenes/naveRotar.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Scenes/video.unity
     guid: 621247fec141b5c4983b33767926b4a3
   m_configObjects: {}

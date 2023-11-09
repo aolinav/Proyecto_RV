@@ -39,6 +39,16 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void naveRotar()
+    {
+        SceneManager.LoadScene("naveRotar");
+    }
+
+    public void naveMover()
+    {
+        SceneManager.LoadScene("naveMover");
+    }
+
     public void salir()
     {
         Application.Quit();
