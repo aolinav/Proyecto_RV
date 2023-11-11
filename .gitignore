@@ -7,3 +7,5 @@ Assets/Editor/migration/com.ptc.vuforia.engine-10.17.4.tgz
 Proyecto_RV.sln
 
 obj/Debug/
+
+.vs/
