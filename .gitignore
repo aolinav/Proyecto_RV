@@ -9,3 +9,7 @@ Proyecto_RV.sln
 obj/Debug/
 
 .vs/
+
+Assembly-CSharp-Editor.csproj
+
+Assembly-CSharp.csproj
