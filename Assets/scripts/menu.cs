@@ -49,6 +49,11 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("naveMover");
     }
 
+    public void minijuego()
+    {
+        SceneManager.LoadScene("minijuego");
+    }
+
     public void salir()
     {
         Application.Quit();
