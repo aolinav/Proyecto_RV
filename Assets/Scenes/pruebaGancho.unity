@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -367,10 +367,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6482150993584543189, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
+    - target: {fileID: -6442298374534657108, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2d0155467b349649b4c803614cea97e, type: 2}
+    - target: {fileID: -4509823143501964880, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f686f06444878e0459b4531c8ff457fc, type: 2}
+    - target: {fileID: -2061519153906511616, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
+    - target: {fileID: -1718243246286949687, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
+    - target: {fileID: -520706396117542555, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
+    - target: {fileID: -264430861247414160, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a2009c7f91d2843911e9a2a18857b3, type: 2}
+    - target: {fileID: 94519523838692428, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
       propertyPath: m_Name
       value: gancho
       objectReference: {fileID: 0}
+    - target: {fileID: 3708247533177161840, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5c43a5c8a235ce499ac418790de136f, type: 2}
+    - target: {fileID: 6589126927893049898, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee5b59d353499d04d908fa7a37b448ca, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
