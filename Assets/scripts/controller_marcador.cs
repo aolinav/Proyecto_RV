@@ -85,7 +85,7 @@ public class controller_marcador : MonoBehaviour
     public void actualizarUI()
     {
         //Actualiza cada frame el numero de monedas recogidas y totales 
-        _marcadorMonedas.text = ((int)_monedasRecogidas).ToString() + " / " + ((int)_contadorMonedas).ToString();
+        _marcadorMonedas.text = _monedasRecogidas.ToString() + " / " + _contadorMonedas.ToString();
         //Actualiza el tiempo que le queda al usuario para acabar el nivel
         _marcadorTiempo.text = ((int)(_segundosNivel / 1000 - _tiempoTranscurrido)).ToString();
 
