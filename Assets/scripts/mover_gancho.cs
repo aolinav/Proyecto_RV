@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,6 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public GameObject verde;
     //Auxiliar para mover el gancho
     private bool presionado = false;
-    
 
     // Update is called once per frame
     void Update()
