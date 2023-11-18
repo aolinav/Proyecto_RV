@@ -29,7 +29,7 @@ public class moneda : MonoBehaviour
     {
         // Hacer que la moneda sea hija del objeto "gancho" 
         colision.transform.parent = transform; // transform hace referencia al transform del gancho 
-        marcador.actualizarMonedas();
+        marcador.actualizarMonedasRecogidas();
         // Puedes realizar otras acciones o l�gica aqu� si es necesario 
         Debug.Log("MONEDA HIJA");
     }
