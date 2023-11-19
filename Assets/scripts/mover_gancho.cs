@@ -13,11 +13,10 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public GameObject garras;
     public GameObject verde;
     public Button botonGancho;
-    private Vector3 _referenciaGarras;
-    private Vector3 _referenciaVerde;
-    private Vector3 _referenciaBola;
+    public float velocidad = 10f;
+    private bool moneda_recogida = false;
     //La parte del gancho que sera la referencia de vuelta del gancho cuando recoga la moneda
-    public GameObject referenciaVuelta;
+    public Transform objetivo;
     //Auxiliar para mover el gancho
     private bool presionado = false;
     public static mover_gancho instancia;
@@ -43,28 +42,50 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     }
 
-    public void Start()
+    public void setMonedaRecogida(bool i)
     {
-        _referenciaGarras = garras.transform.position;
-        _referenciaBola = bola.transform.position;
-        _referenciaVerde = verde.transform.position;
+        moneda_recogida = i;
     }
 
+    public void Start()
+    {
+        
+    }
+
+    public event Action OnGanchoCollision;
     // Update is called once per frame
     void Update()
     {
         if (presionado)
         {
-            //Movimiento hacia abajo de los objetos recogidos
-            bola.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-            garras.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-            verde.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
+            //Movimiento hacia abajo de los objetos recogidos           
+            // Calcula el vector hacia abajo en relación con el objeto padre
+            Vector3 movimientoHaciaAbajo = -objetivo.up;
 
-            //TODO: recoger el gancho cuando haya tocado la moneda
-
+            // Mueve el objeto perpendicularmente a su objeto padre
+            garras.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
+            // Mueve el objeto perpendicularmente a su objeto padre
+            bola.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
+            // Mueve el objeto perpendicularmente a su objeto padre
+            verde.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
         }
+        if (moneda_recogida)
+        {
+
+            // Calcula el vector hacia abajo en relación con el objeto padre
+            Vector3 movimientoHaciaAbajo = objetivo.up;
+
+            // Mueve el objeto perpendicularmente a su objeto padre
+            garras.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
+            // Mueve el objeto perpendicularmente a su objeto padre
+            bola.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
+            // Mueve el objeto perpendicularmente a su objeto padre
+            verde.transform.Translate(movimientoHaciaAbajo * velocidad * Time.deltaTime, Space.World);
+        }
+    
     }
 
+  
     //Evento llamado cuando se deja de clickar un objeto de la interfaz en el que este como componente este script
     //en este caso el boton
     public void OnPointerUp(PointerEventData eventData)
@@ -98,17 +119,13 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
         botonGancho = GetComponent<Button>();
         botonGancho.interactable = false;
-        // Interpola linealmente entre las posiciones actuales y la posición de la nave
-        //garras.transform.position = Vector3.Lerp(garras.transform.position, referenciaVuelta.transform.position, paso);
-        //bola.transform.position = Vector3.Lerp(bola.transform.position, referenciaVuelta.transform.position, paso);
-        //verde.transform.position = Vector3.Lerp(verde.transform.position, referenciaVuelta.transform.position, paso);
-        //bola.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
-        //garras.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
-        //verde.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
-         //(-0.2334829f,-1.276212f, -0.1359493f)
-        bola.transform.position = referenciaVuelta.transform.position;
-        verde.transform.position = referenciaVuelta.transform.position;
-        garras.transform.position = bola.transform.position;
+        moneda_recogida = true;
+        // Calcula la dirección hacia el objetivo
+        //Vector3 direccion = (objetivo.position - garras.transform.position).normalized;
 
+
+       
     }
 }
+
+

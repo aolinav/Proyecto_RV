@@ -17,3 +17,5 @@ Assembly-CSharp.csproj
 Temp/
 
 obj/
+
+ProjectSettings/TagManager.asset

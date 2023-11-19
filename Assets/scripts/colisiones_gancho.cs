@@ -1,18 +1,28 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class colisiones_gancho : MonoBehaviour
 {
+    public GameObject bola;
+    public GameObject verde;
 
-    
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider colision)
     {
-        if (collision.gameObject.CompareTag("Objeto"))
-        {
-            // Se ha producido una colisión con el objeto deseado
-            Debug.Log("Colisión con el objeto deseado.");
 
+        // Verificar si el objeto con el que colisionamos es una moneda 
+        if (colision.CompareTag("nave"))
+        {
+            Debug.Log("COLISION GANCHO");
+
+            // Se ha producido una colisión con el objeto deseado
+            mover_gancho.getInstancia().setMonedaRecogida(false);
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            bola.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            verde.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            Debug.Log("PARADO");
+            
             // Puedes realizar otras acciones aquí, como detener el movimiento del objeto o activar alguna animación.
         }
     }
@@ -27,6 +37,19 @@ public class colisiones_gancho : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        // Busca el objeto que tiene el script mover_gancho y suscríbete al evento
+        mover_gancho scriptMoverGancho = FindObjectOfType<mover_gancho>();
+        if (scriptMoverGancho != null)
+        {
+            scriptMoverGancho.OnGanchoCollision += HandleGanchoCollision;
+        }
+    }
+
+    private void HandleGanchoCollision()
+    {
+        // Acciones que deseas realizar cuando hay una colisión
+        Debug.Log("El gancho ha tocado el objeto.");
+    }
 }
-
-

@@ -1,52 +1,66 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private FixedJoystick _joystick;
+    public Rigidbody _rigidbody;
+    public FixedJoystick _joystick;
 
     public Transform moon;
-    public float orbitSpeed = 50f;
-    public float orbitRadius = 1f;
-    public float rotationSpeed = 5f;
+    public float rotationSpeed = 50f;
+
+    public float verticalInput;
+    public float horizontalInput;
+
+    public float tiltSpeed = 20f;
 
     void Update()
     {
-        // Movimiento orbital alrededor de la Luna
-        OrbitAroundMoon();
+        verticalInput = _joystick.Vertical;
+        horizontalInput = _joystick.Horizontal;
 
-        // Control de orientación de la nave
-        AdjustOrientation();
+
+        MoveForward();
+        Tilt();
+        //RotateAroundObject();
+
     }
 
-    void OrbitAroundMoon()
+    void RotateAroundObject()
     {
-        // Calcula la posición relativa a la Luna
-        Vector3 relativePosition = transform.position - moon.position;
-
-        // Calcula la nueva posición orbital
-        Quaternion rotation = Quaternion.Euler(0, orbitSpeed * Time.deltaTime, 0);
-        relativePosition = rotation * relativePosition;
-        Vector3 newPosition = moon.position + relativePosition.normalized * orbitRadius;
-
-        // Actualiza la posición de la nave
-        transform.position = newPosition;
-
-        // Alinea la nave hacia el centro de la Luna y hacia abajo
-        transform.LookAt(moon.position, Vector3.down);
-    }
-
-    void AdjustOrientation()
-    {
-        // Controla la orientación de la nave utilizando las teclas de flecha
         float horizontalInput = _joystick.Horizontal;
-        float verticalInput = _joystick.Vertical;
 
-        Vector3 rotationInput = new Vector3(-verticalInput, horizontalInput, 0);
-        Quaternion deltaRotation = Quaternion.Euler(rotationInput * rotationSpeed * Time.deltaTime);
-        transform.rotation *= deltaRotation;
+        // Rotaciï¿½n alrededor del objeto central (la luna)
+        transform.RotateAround(moon.position, Vector3.up, horizontalInput * rotationSpeed * Time.deltaTime);
+
     }
+
+    void MoveForward()
+    {
+        // Aplica una fuerza hacia adelante en la direcciï¿½n actual de la nave
+        _rigidbody.AddForce(Mathf.Abs(verticalInput) * transform.forward * rotationSpeed * Time.deltaTime, ForceMode.Force);
+    }
+
+    void Tilt()
+    {
+        float tiltHorizontalInput = _joystick.Horizontal; // Inclinaciï¿½n en el eje X
+        float tiltVerticalInput = _joystick.Vertical; // Inclinaciï¿½n en el eje Y
+
+        // Calcula la inclinaciï¿½n en el eje X
+        Vector3 tiltAxisX = moon.right;
+        Quaternion tiltRotationX = Quaternion.AngleAxis(tiltVerticalInput * tiltSpeed * Time.deltaTime, tiltAxisX);
+
+        // Calcula la inclinaciï¿½n en el eje Y
+        Vector3 tiltAxisY = moon.up;
+        Quaternion tiltRotationY = Quaternion.AngleAxis(-tiltHorizontalInput * tiltSpeed * Time.deltaTime, tiltAxisY);
+
+        // Aplica la inclinaciï¿½n al objeto
+        transform.rotation *= tiltRotationX * tiltRotationY;
+    }
+
+
+
 }
