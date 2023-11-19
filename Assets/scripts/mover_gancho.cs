@@ -58,6 +58,10 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     {
         if (presionado)
         {
+            garras.GetComponent<Rigidbody>().isKinematic = false;
+            bola.GetComponent<Rigidbody>().isKinematic = false;
+            verde.GetComponent<Rigidbody>().isKinematic = false;
+
             //Movimiento hacia abajo de los objetos recogidos           
             // Calcula el vector hacia abajo en relación con el objeto padre
             Vector3 movimientoHaciaAbajo = -objetivo.up;
