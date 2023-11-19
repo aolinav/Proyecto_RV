@@ -59,6 +59,8 @@ public class controller_marcador : MonoBehaviour
         {
             if (hijo.CompareTag(_tagMoneda))
             {
+                //Si no tuviesen el script de moneda aplicado puede correrse esta linea que automatiza el proceso
+                //hijo.gameObject.AddComponent<moneda>();
                 _contadorMonedas++;
             }
         }
@@ -112,6 +114,7 @@ public class controller_marcador : MonoBehaviour
     public void actualizarMonedasRecogidas()
     {
         setMonedasRecogidas(1);
+        Debug.Log("MONEDA RECOGIDA");
     }
 
     private void setMonedasRecogidas(int cantidad)
