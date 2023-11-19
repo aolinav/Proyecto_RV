@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class controller_marcador : MonoBehaviour
 
     private TextMeshProUGUI _marcadorMonedas;
     private TextMeshProUGUI _marcadorTiempo;
+    private TextMeshProUGUI _monedaRecogida;
+
+    private float tiempoActual = 0;
     // _contador monedas contiene el total de monedas de una escena
     private int _contadorMonedas = 0;
     private string _tagMoneda = "Moneda";
@@ -47,7 +51,8 @@ public class controller_marcador : MonoBehaviour
     {
         _marcadorMonedas = GameObject.Find("MarcadorMonedas").GetComponent<TextMeshProUGUI>();
         _marcadorTiempo = GameObject.Find("Tiempo").GetComponent<TextMeshProUGUI>();
-
+        _monedaRecogida = GameObject.Find("AvisoMoneda").GetComponent<TextMeshProUGUI>();
+        _monedaRecogida.enabled = false;
         //recogemos los hijos de luna
         Transform[] hijos = luna.GetComponentsInChildren<Transform>(true);
 
@@ -114,7 +119,21 @@ public class controller_marcador : MonoBehaviour
     public void actualizarMonedasRecogidas()
     {
         setMonedasRecogidas(1);
+        _monedaRecogida.enabled = true;
         Debug.Log("MONEDA RECOGIDA");
+        while (tiempoActual <= 5000f)
+        {
+            tiempoActual += Time.deltaTime;
+            
+        }
+        Debug.Log("FIN MONEDA");
+        
+    }
+
+
+    public void quitarAvisoMoneda()
+    {
+        _monedaRecogida.enabled = false;
     }
 
     private void setMonedasRecogidas(int cantidad)

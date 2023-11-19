@@ -7,7 +7,7 @@ public class colisiones_gancho : MonoBehaviour
 {
     public GameObject bola;
     public GameObject verde;
-    
+    private controller_marcador marcador;
     private void OnTriggerEnter(Collider colision)
     {
 
@@ -21,11 +21,14 @@ public class colisiones_gancho : MonoBehaviour
             GetComponent<Rigidbody>().velocity = Vector3.zero;
             bola.GetComponent<Rigidbody>().velocity = Vector3.zero;
             verde.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
             GetComponent<Rigidbody>().isKinematic = true;
             bola.GetComponent<Rigidbody>().isKinematic = true;
             verde.GetComponent<Rigidbody>().isKinematic = true;
             Debug.Log("PARADO");
-            
+
+            marcador = controller_marcador.getInstancia();
+            marcador.quitarAvisoMoneda();
             // Puedes realizar otras acciones aquí, como detener el movimiento del objeto o activar alguna animación.
         }
     }
