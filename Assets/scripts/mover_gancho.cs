@@ -13,6 +13,9 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public GameObject garras;
     public GameObject verde;
     public Button botonGancho;
+    private Vector3 _referenciaGarras;
+    private Vector3 _referenciaVerde;
+    private Vector3 _referenciaBola;
     //La parte del gancho que sera la referencia de vuelta del gancho cuando recoga la moneda
     public GameObject referenciaVuelta;
     //Auxiliar para mover el gancho
@@ -38,6 +41,13 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             DestroyImmediate(gameObject);
         }
 
+    }
+
+    public void Start()
+    {
+        _referenciaGarras = garras.transform.position;
+        _referenciaBola = bola.transform.position;
+        _referenciaVerde = verde.transform.position;
     }
 
     // Update is called once per frame
@@ -83,24 +93,22 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
         Debug.Log("DEVOLVIENDO MONEDA");
         // Mueve gradualmente "moneda" hacia la posición de "nave"
-        float velocidadMovimiento = .5f; // Puedes ajustar la velocidad según sea necesario
+        float velocidadMovimiento = .05f; // Puedes ajustar la velocidad según sea necesario
         float paso = velocidadMovimiento * Time.deltaTime;
 
         botonGancho = GetComponent<Button>();
         botonGancho.interactable = false;
-        while (garras.transform.position != referenciaVuelta.transform.position)
-        {
+        // Interpola linealmente entre las posiciones actuales y la posición de la nave
+        //garras.transform.position = Vector3.Lerp(garras.transform.position, referenciaVuelta.transform.position, paso);
+        //bola.transform.position = Vector3.Lerp(bola.transform.position, referenciaVuelta.transform.position, paso);
+        //verde.transform.position = Vector3.Lerp(verde.transform.position, referenciaVuelta.transform.position, paso);
+        //bola.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
+        //garras.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
+        //verde.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
+         //(-0.2334829f,-1.276212f, -0.1359493f)
+        bola.transform.position = referenciaVuelta.transform.position;
+        verde.transform.position = referenciaVuelta.transform.position;
+        garras.transform.position = bola.transform.position;
 
-            // Interpola linealmente entre las posiciones actuales y la posición de la nave
-            garras.transform.position = Vector3.Lerp(garras.transform.position, referenciaVuelta.transform.position, paso);
-            bola.transform.position = Vector3.Lerp(bola.transform.position, referenciaVuelta.transform.position, paso);
-            verde.transform.position = Vector3.Lerp(verde.transform.position, referenciaVuelta.transform.position, paso);
-
-        }
-        botonGancho.interactable = true;
-        ////Movimiento hacia abajo de los objetos recogidos
-        //bola.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-        //garras.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-        //verde.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
     }
 }

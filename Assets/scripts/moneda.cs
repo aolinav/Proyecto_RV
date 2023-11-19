@@ -7,6 +7,8 @@ public class moneda : MonoBehaviour
     private int _valorMoneda;
     public controller_marcador marcador;
     public mover_gancho controller_gancho;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +34,13 @@ public class moneda : MonoBehaviour
     {
         // Hacer que la moneda sea hija del objeto "gancho" 
         transform.parent = colision.transform; // transform hace referencia al transform del gancho 
-        marcador.actualizarMonedasRecogidas();
+        gameObject.SetActive(false);
+        //TODO: Sacar texto por pantalla de recoger moneda
+
+
         // Puedes realizar otras acciones o l�gica aqu� si es necesario 
         Debug.Log("MONEDA HIJA");
+        marcador.actualizarMonedasRecogidas();
         controller_gancho.recogerMoneda();
     }
 
