@@ -161,27 +161,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.004445571
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.00003904991
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.99995154
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.00878301
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -1.006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -179.491
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ef78f38ae1c9c745be052352e4f50ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74104744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bea1d320f5d27c49aba445b5ac8485e, type: 3}
   m_Name: 
@@ -445,10 +445,9 @@ MonoBehaviour:
   _rigidbody: {fileID: 74104746}
   _joystick: {fileID: 403850088}
   moon: {fileID: 172505861}
-  rotationSpeed: 10
-  verticalInput: 0
-  horizontalInput: 0
-  tiltSpeed: 20
+  orbitSpeed: 50
+  orbitRadius: 5
+  rotationSpeed: 5
 --- !u!1001 &102326045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2558,10 +2557,8 @@ MonoBehaviour:
   bola: {fileID: 992485933}
   garras: {fileID: 1409974093}
   verde: {fileID: 951835370}
-  velocidadMovimiento: 10
   botonGancho: {fileID: 867217892}
   referenciaVuelta: {fileID: 1474162878}
-  moon: {fileID: 172505861}
 --- !u!1 &951835370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3564783574603935192, guid: 0fcb4c3ea85963e43bb232e5d486a802, type: 3}
@@ -2747,7 +2744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: 362}
+  m_AnchoredPosition: {x: -959.99994, y: -1002.5938}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032656726
