@@ -31,7 +31,7 @@ public class menu : MonoBehaviour
     public void instrucciones()
     {
         // Aqu� puedes cargar la nueva escena. Reemplaza "NombreDeLaNuevaEscena" por el nombre de tu nueva escena.
-        SceneManager.LoadScene("instrucciones");
+        SceneManager.LoadScene("Instrucciones Nuevas");
     }
 
     public void menu_principal()

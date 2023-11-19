@@ -14287,11 +14287,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2086591308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86e62ade52336b34fb01289dcbeb062e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b311f6b2a3a14e428effdc01ac7f60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 1771832698}
-  principal: {fileID: 1834250142}
+  panel: {fileID: 0}
+  principal: {fileID: 0}
 --- !u!1 &2095984329
 GameObject:
   m_ObjectHideFlags: 0

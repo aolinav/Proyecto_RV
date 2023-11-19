@@ -114,6 +114,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\scripts\controller_marcador.cs" />
+    <Compile Include="Assets\scripts\instrucciones.cs" />
     <Compile Include="Assets\scripts\MainPanel.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\scripts\colisiones_gancho.cs" />
