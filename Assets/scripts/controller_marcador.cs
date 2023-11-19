@@ -98,7 +98,7 @@ public class controller_marcador : MonoBehaviour
         if (_tiempoTranscurridoEnMilisegundos >= _segundosNivel)
         {
             Debug.Log("Han pasado " + _segundosNivel + " milisegundos.");
-            SceneManager.LoadScene("MainMenu");
+            //SceneManager.LoadScene("MainMenu");
         }
     }
 

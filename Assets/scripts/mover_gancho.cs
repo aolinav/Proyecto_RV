@@ -12,6 +12,7 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public GameObject bola;
     public GameObject garras;
     public GameObject verde;
+    public float velocidadMovimiento = 10f;
     public Button botonGancho;
     private Vector3 _referenciaGarras;
     private Vector3 _referenciaVerde;
@@ -21,6 +22,8 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     //Auxiliar para mover el gancho
     private bool presionado = false;
     public static mover_gancho instancia;
+
+    public Transform moon;
 
     void Awake()
     {
@@ -55,10 +58,12 @@ public class mover_gancho : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     {
         if (presionado)
         {
-            //Movimiento hacia abajo de los objetos recogidos
-            bola.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-            garras.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
-            verde.transform.Translate(Vector3.down * Time.deltaTime, Space.World);
+            Vector3 direccionALaLuna = (moon.position - transform.position).normalized;
+
+            // Movimiento en dirección a la Luna para los objetos recogidos
+            bola.transform.Translate(direccionALaLuna * velocidadMovimiento * Time.deltaTime, Space.World);
+            garras.transform.Translate(direccionALaLuna * velocidadMovimiento * Time.deltaTime, Space.World);
+            verde.transform.Translate(direccionALaLuna * velocidadMovimiento * Time.deltaTime, Space.World);
 
             //TODO: recoger el gancho cuando haya tocado la moneda
 
