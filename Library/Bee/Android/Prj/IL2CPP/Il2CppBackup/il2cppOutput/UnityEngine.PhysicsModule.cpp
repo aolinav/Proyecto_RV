@@ -2170,12 +2170,11 @@ IL_0034_2:
 
 CATCH_0037_1:
 			{
-				Exception_t* L_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				V_2 = L_10;
-				Exception_t* L_11 = V_2;
+				V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+				Exception_t* L_10 = V_2;
 				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_11, NULL);
-				IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_10, NULL);
+				IL2CPP_POP_ACTIVE_EXCEPTION();
 				goto IL_0043_1;
 			}
 

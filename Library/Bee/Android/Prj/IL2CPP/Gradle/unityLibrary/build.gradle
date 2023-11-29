@@ -8,12 +8,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'com.google.protobuf:protobuf-javalite:3.19.4'
     implementation(name: 'GfxPluginCardboard', ext:'aar')
-    implementation project('xrmanifest.androidlib')
 
 }
 
 android {
-    ndkPath "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK"
+    ndkPath "C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK"
 
     compileSdkVersion 31
     buildToolsVersion '32.0.0'

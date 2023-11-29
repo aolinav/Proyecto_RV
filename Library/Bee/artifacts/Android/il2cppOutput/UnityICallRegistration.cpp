@@ -694,10 +694,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AnimationCurve_Internal_Equals();
 		Register_UnityEngine_AnimationCurve_Internal_Equals();
 
-		//System.Int32 UnityEngine.AnimationCurve::GetHashCode()
-		void Register_UnityEngine_AnimationCurve_GetHashCode();
-		Register_UnityEngine_AnimationCurve_GetHashCode();
-
 		//System.IntPtr UnityEngine.AnimationCurve::Internal_Create(UnityEngine.Keyframe[])
 		void Register_UnityEngine_AnimationCurve_Internal_Create();
 		Register_UnityEngine_AnimationCurve_Internal_Create();
@@ -998,6 +994,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
+		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
+		void Register_UnityEngine_GameObject_get_transform();
+		Register_UnityEngine_GameObject_get_transform();
+
 	//End Registrations for type : UnityEngine.GameObject
 
 	//Start Registrations for type : UnityEngine.Gradient
@@ -1067,6 +1067,46 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_IntegratedSubsystem_Stop();
 
 	//End Registrations for type : UnityEngine.IntegratedSubsystem
+
+	//Start Registrations for type : UnityEngine.Internal.InputUnsafeUtility
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetButtonDown(System.String)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonDown();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonDown();
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetButtonUp__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonUp__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonUp__Unmanaged();
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetButton__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetButton__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetButton__Unmanaged();
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetKeyDownString__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyDownString__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyDownString__Unmanaged();
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetKeyString__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyString__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyString__Unmanaged();
+
+		//System.Boolean UnityEngine.Internal.InputUnsafeUtility::GetKeyUpString__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyUpString__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetKeyUpString__Unmanaged();
+
+		//System.Byte UnityEngine.Internal.InputUnsafeUtility::GetButtonDown__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonDown__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetButtonDown__Unmanaged();
+
+		//System.Single UnityEngine.Internal.InputUnsafeUtility::GetAxisRaw__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetAxisRaw__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetAxisRaw__Unmanaged();
+
+		//System.Single UnityEngine.Internal.InputUnsafeUtility::GetAxis__Unmanaged(System.Byte*,System.Int32)
+		void Register_UnityEngine_Internal_InputUnsafeUtility_GetAxis__Unmanaged();
+		Register_UnityEngine_Internal_InputUnsafeUtility_GetAxis__Unmanaged();
+
+	//End Registrations for type : UnityEngine.Internal.InputUnsafeUtility
 
 	//Start Registrations for type : UnityEngine.Light
 

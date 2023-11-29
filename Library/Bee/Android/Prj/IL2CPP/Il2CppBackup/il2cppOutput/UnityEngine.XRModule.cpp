@@ -499,9 +499,6 @@ struct XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___srcRect;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___destRect;
 	intptr_t ___foveatedRenderingInfo;
-	bool ___srcHdrEncoded;
-	int32_t ___srcHdrColorGamut;
-	int32_t ___srcHdrMaxLuminance;
 };
 struct XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshaled_pinvoke
 {
@@ -510,9 +507,6 @@ struct XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshaled_pinvoke
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___srcRect;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___destRect;
 	intptr_t ___foveatedRenderingInfo;
-	int32_t ___srcHdrEncoded;
-	int32_t ___srcHdrColorGamut;
-	int32_t ___srcHdrMaxLuminance;
 };
 struct XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshaled_com
 {
@@ -521,9 +515,6 @@ struct XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshaled_com
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___srcRect;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___destRect;
 	intptr_t ___foveatedRenderingInfo;
-	int32_t ___srcHdrEncoded;
-	int32_t ___srcHdrColorGamut;
-	int32_t ___srcHdrMaxLuminance;
 };
 struct XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0 
 {
