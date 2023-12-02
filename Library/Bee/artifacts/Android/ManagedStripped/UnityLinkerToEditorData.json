@@ -558,11 +558,17 @@
         "name": "Physics",
         "dependencies": [
           {
-            "name": "Collider",
+            "name": "BoxCollider",
             "scenes": [
               "Assets/Scenes/SampleScene.unity"
             ],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Collider",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {

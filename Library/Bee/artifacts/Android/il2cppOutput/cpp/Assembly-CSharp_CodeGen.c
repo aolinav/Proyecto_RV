@@ -12,6 +12,10 @@
 
 
 
+extern void interactuar_Start_m709D8D7ADBDD0FE64CFA6FEE09457BB1857B583C (void);
+extern void interactuar_Update_mEE55B3C4798C304A289DD06C753B42B0758DD101 (void);
+extern void interactuar_MoveObject_m4DC273B8E10A1DA0ED1C4738A391EEB6E0C7B8EE (void);
+extern void interactuar__ctor_m061AA3C2D483CD43DBAEE63CD39800A41CAF5D0E (void);
 extern void CardboardStartup_Start_m35E3138C09D62411C4C8503DD4D47DA2AF9BF6E2 (void);
 extern void CardboardStartup_Update_m4D4D770B4F4BA807AB64DB40B6730226BB821883 (void);
 extern void CardboardStartup__ctor_m4C459294D28BDCFC64FECC657FB860844F52D9F7 (void);
@@ -47,8 +51,12 @@ extern void rotar_Update_m28E113F7E0ECC367ACA6AB4E769CDF709BD59EFB (void);
 extern void rotar__ctor_mA50D5479E94DAEDDDBE8C1BA12CD1E2246F72810 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[35] = 
+static Il2CppMethodPointer s_methodPointers[39] = 
 {
+	interactuar_Start_m709D8D7ADBDD0FE64CFA6FEE09457BB1857B583C,
+	interactuar_Update_mEE55B3C4798C304A289DD06C753B42B0758DD101,
+	interactuar_MoveObject_m4DC273B8E10A1DA0ED1C4738A391EEB6E0C7B8EE,
+	interactuar__ctor_m061AA3C2D483CD43DBAEE63CD39800A41CAF5D0E,
 	CardboardStartup_Start_m35E3138C09D62411C4C8503DD4D47DA2AF9BF6E2,
 	CardboardStartup_Update_m4D4D770B4F4BA807AB64DB40B6730226BB821883,
 	CardboardStartup__ctor_m4C459294D28BDCFC64FECC657FB860844F52D9F7,
@@ -85,8 +93,12 @@ static Il2CppMethodPointer s_methodPointers[35] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[35] = 
+static const int32_t s_InvokerIndices[39] = 
 {
+	1227,
+	1227,
+	617,
+	1227,
 	1227,
 	1227,
 	1227,
@@ -120,14 +132,14 @@ static const int32_t s_InvokerIndices[35] =
 	1227,
 	1227,
 	1227,
-	2414,
+	2421,
 	1227,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	35,
+	39,
 	s_methodPointers,
 	0,
 	NULL,

@@ -1,22 +1,22 @@
 [
     {
-        "merged": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-anydpi-v26\\app_icon_round.xml"
     },
     {
-        "merged": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_app_icon_round.xml.flat",
-        "source": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-anydpi-v26\\app_icon_round.xml"
+        "merged": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_app_icon.png.flat",
-        "source": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
+        "merged": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-anydpi-v26\\app_icon.xml"
     },
     {
-        "merged": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_app_icon.xml.flat",
-        "source": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-anydpi-v26\\app_icon.xml"
+        "merged": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\damnr\\Documents\\Proyectos\\Unity\\ProyectoRVFV\\Proyecto_RV\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Miguel\\Desktop\\Sprint 3\\Sprint 3\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
     }
 ]

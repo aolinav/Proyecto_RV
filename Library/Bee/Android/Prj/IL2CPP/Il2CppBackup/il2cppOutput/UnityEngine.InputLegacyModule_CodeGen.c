@@ -18,6 +18,7 @@ extern void CameraRaycastHelper_RaycastTry_m79A654495BD2C09623E9067BCC70D23A0DA3
 extern void CameraRaycastHelper_RaycastTry2D_m132832B9171CD030AD231A63BF70D1226ED1F373 (void);
 extern void CameraRaycastHelper_RaycastTry_Injected_m4A9EA285FB7B24B7B3D894E7EE997B41ED302DEF (void);
 extern void CameraRaycastHelper_RaycastTry2D_Injected_m2620821FE8CB793C314AAE43E3B4C7BEAE5D4C9E (void);
+extern void Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E (void);
 extern void Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579 (void);
 extern void Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA (void);
 extern void Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3 (void);
@@ -40,11 +41,12 @@ extern void InputUnsafeUtility_GetKeyUpString__Unmanaged_mFD0D4ED74B64E565CB3F54
 extern void InputUnsafeUtility_GetKeyDownString__Unmanaged_m53E2CCD225AC1CE7CB40002403EDC5AEF266EB8D (void);
 extern void InputUnsafeUtility_GetAxis__Unmanaged_m288AEE066E04CCFDD229629882CA42DBD1D85CF2 (void);
 extern void InputUnsafeUtility_GetAxisRaw__Unmanaged_m31953D955E75028D274A75661CAB2E13E13320AE (void);
+extern void InputUnsafeUtility_GetButton_mD23EF9339E147CD6081BC4A6B45F10EE5461CEE2 (void);
 extern void InputUnsafeUtility_GetButton__Unmanaged_m270892EB7D8C88443200DF972F76076AC28952B2 (void);
 extern void InputUnsafeUtility_GetButtonDown_mB35B46B92DA28196820B996E2420E5E320088EE4 (void);
 extern void InputUnsafeUtility_GetButtonDown__Unmanaged_m411E8743768382A33B3778E734AF072F8DBDECC4 (void);
 extern void InputUnsafeUtility_GetButtonUp__Unmanaged_mCCE34158CE05432541102B1C2AEC6545E25D0732 (void);
-static Il2CppMethodPointer s_methodPointers[32] = 
+static Il2CppMethodPointer s_methodPointers[34] = 
 {
 	Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A,
 	Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0,
@@ -52,6 +54,7 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	CameraRaycastHelper_RaycastTry2D_m132832B9171CD030AD231A63BF70D1226ED1F373,
 	CameraRaycastHelper_RaycastTry_Injected_m4A9EA285FB7B24B7B3D894E7EE997B41ED302DEF,
 	CameraRaycastHelper_RaycastTry2D_Injected_m2620821FE8CB793C314AAE43E3B4C7BEAE5D4C9E,
+	Input_GetButton_m2F217DAE69DB3D1324FB848B3C9C84F19A80989E,
 	Input_GetButtonDown_mEF5F80C9E8F04104E807D9CBD6F70CDB98751579,
 	Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA,
 	Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3,
@@ -74,6 +77,7 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	InputUnsafeUtility_GetKeyDownString__Unmanaged_m53E2CCD225AC1CE7CB40002403EDC5AEF266EB8D,
 	InputUnsafeUtility_GetAxis__Unmanaged_m288AEE066E04CCFDD229629882CA42DBD1D85CF2,
 	InputUnsafeUtility_GetAxisRaw__Unmanaged_m31953D955E75028D274A75661CAB2E13E13320AE,
+	InputUnsafeUtility_GetButton_mD23EF9339E147CD6081BC4A6B45F10EE5461CEE2,
 	InputUnsafeUtility_GetButton__Unmanaged_m270892EB7D8C88443200DF972F76076AC28952B2,
 	InputUnsafeUtility_GetButtonDown_mB35B46B92DA28196820B996E2420E5E320088EE4,
 	InputUnsafeUtility_GetButtonDown__Unmanaged_m411E8743768382A33B3778E734AF072F8DBDECC4,
@@ -86,48 +90,50 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[3] =
 {
 	{ 0x06000001, Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A_AdjustorThunk },
 	{ 0x06000002, Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0_AdjustorThunk },
-	{ 0x06000015, HitInfo_SendMessage_m7834418ACE250BBCBA38ADCF0892E475BD1AD541_AdjustorThunk },
+	{ 0x06000016, HitInfo_SendMessage_m7834418ACE250BBCBA38ADCF0892E475BD1AD541_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[32] = 
+static const int32_t s_InvokerIndices[34] = 
 {
 	1223,
 	1186,
-	1513,
-	1513,
-	1503,
-	1503,
-	2143,
-	2140,
-	2140,
-	2306,
-	2409,
-	2389,
-	2382,
-	2042,
-	2354,
-	2411,
-	2411,
-	2357,
-	2046,
-	2411,
+	1515,
+	1515,
+	1505,
+	1505,
+	2149,
+	2149,
+	2146,
+	2146,
+	2312,
+	2416,
+	2396,
+	2388,
+	2048,
+	2360,
+	2418,
+	2418,
+	2363,
+	2052,
+	2418,
 	1036,
-	2151,
-	1887,
-	1846,
-	1846,
-	1846,
-	1996,
-	1996,
-	1846,
-	2143,
-	1846,
-	1846,
+	2157,
+	1893,
+	1852,
+	1852,
+	1852,
+	2002,
+	2002,
+	2149,
+	1852,
+	2149,
+	1852,
+	1852,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_InputLegacyModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_InputLegacyModule_CodeGenModule = 
 {
 	"UnityEngine.InputLegacyModule.dll",
-	32,
+	34,
 	s_methodPointers,
 	3,
 	s_adjustorThunks,

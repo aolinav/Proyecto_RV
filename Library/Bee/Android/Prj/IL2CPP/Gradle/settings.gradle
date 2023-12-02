@@ -8,6 +8,7 @@ pluginManagement {
 }
 
 include ':launcher', ':unityLibrary'
+include 'unityLibrary:xrmanifest.androidlib'
 
 
 dependencyResolutionManagement {
