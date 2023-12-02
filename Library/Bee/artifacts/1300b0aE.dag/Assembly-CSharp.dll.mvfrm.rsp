@@ -1,4 +1,8 @@
 Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_1315E0A407C70415.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ForUI.ref.dll_8456852F39E72DEA.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ref.dll_7B1D397D2193763B.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.Editor.ref.dll_553CFFCCE7430329.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.ref.dll_66DE4C1C9A03AD08.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Performance.Profile-Analyzer.Editor.ref.dll_8B44F821019897E5.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_A558B9E65539D7D0.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_DA88E6A3E9EB6155.mvfrm
@@ -19,6 +23,12 @@ Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Shared.Editor.ref.dll_6CA31C4
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.State.Editor.ref.dll_DC1879B0E64A8F15.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.State.ref.dll_900B338E31D9525C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualStudio.Editor.ref.dll_0FE027DDD6F41767.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.CoreUtils.Editor.ref.dll_8144CEBFC8DD722F.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.CoreUtils.ref.dll_7BD60984F2BC85A2.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.Interaction.Toolkit.Editor.ref.dll_EA0A41A881A38C0F.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.ref.dll_746FD716FFC21CD0.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.ref.dll_DD000E33220D64F1.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.Interaction.Toolkit.ref.dll_3BC3806C28E64DC2.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.XR.Management.Editor.ref.dll_63D1283B59813AF8.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.XR.Management.ref.dll_B8AA0C3955A88449.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.SpatialTracking.ref.dll_4005BB3EAE0C01EA.mvfrm
